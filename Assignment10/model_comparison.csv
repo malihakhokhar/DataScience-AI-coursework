@@ -1,0 +1,7 @@
+Model,Accuracy (%)
+Logistic Regression,79
+Decision Tree,82
+Random Forest,85
+SVM,83
+ANN,87
+CNN (Specialized Model),86
