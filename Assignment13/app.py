@@ -1,26 +1,26 @@
 from flask import Flask, request, jsonify
-import joblib
 import pandas as pd
+import joblib
 
 app = Flask(__name__)
 
-# Load model and feature names
+# Load trained model and features
 model = joblib.load("churn_model.pkl")
 features = joblib.load("features.pkl")
 
 @app.route("/")
 def home():
-    return "Customer Churn Prediction Model is Running"
+    return "Customer Churn Prediction API is running"
 
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.json
-    input_data = pd.DataFrame([data])
+    input_df = pd.DataFrame([data])
 
-    # Ensure correct feature order
-    input_data = input_data.reindex(columns=features, fill_value=0)
+    # Align input with training features
+    input_df = input_df.reindex(columns=features, fill_value=0)
 
-    prediction = model.predict(input_data)[0]
+    prediction = model.predict(input_df)[0]
 
     return jsonify({
         "churn_prediction": int(prediction)
@@ -28,3 +28,4 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
