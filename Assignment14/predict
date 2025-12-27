@@ -1,0 +1,9 @@
+🔍 Explainability of the Model (Why X → Y)
+
+The customer churn prediction model uses machine learning to map customer attributes (X) to a churn outcome (Y). To ensure transparency and trust, explainability techniques were applied to understand how input features influence predictions.
+
+A Random Forest classifier was selected due to its ability to provide feature importance scores. Feature importance analysis identifies which customer attributes contribute most significantly to churn predictions.
+
+The analysis revealed that features such as customer tenure, monthly charges, and total charges have a strong influence on the model’s decision-making process. For example, customers with shorter tenure and higher monthly charges were more likely to be classified as churn risks.
+
+This explainability allows stakeholders to understand why a customer is predicted to churn and enables informed business decisions, such as targeted retention strategies. By incorporating explainability, the model avoids being a black box and aligns with responsible and ethical AI principles.
