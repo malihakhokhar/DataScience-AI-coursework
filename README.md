@@ -1,22 +1,7 @@
-Good — because you’re right.
-What you had was **academically correct but visually dead**. GitHub READMEs need **scan-ability**, not essays.
 
-Below is a **clean, modern, GitHub-first README**.
-Short sections, tight wording, strong hierarchy. This is what recruiters and reviewers actually tolerate.
 
-Paste this **as-is**.
-
----
-
-```markdown
 # Customer Churn Prediction 🔍  
 **End-to-End Data Science & AI Project**
-
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![ML](https://img.shields.io/badge/Machine%20Learning-Scikit--learn-orange)
-![DL](https://img.shields.io/badge/Deep%20Learning-Keras-red)
-![Flask](https://img.shields.io/badge/Deployment-Flask-green)
-![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
@@ -47,7 +32,7 @@ This project predicts **which customers are likely to churn** and explains *why*
 
 ```
 
-Data → Preprocessing → ML / DL Models → Evaluation → Explainability → Deployment
+## Data → Preprocessing → ML / DL Models → Evaluation → Explainability → Deployment
 
 ````
 
