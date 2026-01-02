@@ -1,141 +1,268 @@
-# 📘 Data Science & AI Project
+🚀 Customer Churn Prediction — Data Science & AI Project
 
-## 🎯 Project Overview
-This project applies key **Machine Learning techniques** — including **Regression**, **Classification**, and **Clustering** — to analyze data, build predictive models, and uncover hidden patterns.  
-It demonstrates the full **Data Science pipeline**, from **data preprocessing** to **model evaluation** and **visualization**.
+An end-to-end Data Science & Artificial Intelligence system for predicting customer churn using Machine Learning, Deep Learning, NLP, and Model Deployment.
 
----
+This repository consolidates 13 academic assignments into a single coherent project, following industry-standard workflows and ethical AI principles.
 
-## 🧹 1. Data Preprocessing
+📌 Project Summary
 
-| Step | Description |
-|------|--------------|
-| 🧩 Missing Values | Handled missing values using **median** (numeric) and **mode** (categorical). |
-| 🔠 Encoding | Converted categorical variables to numerical form using **Label Encoding**. |
-| ⚖️ Scaling | Scaled numeric features using **StandardScaler** for better optimization. |
-| 🧪 Split | Divided dataset into **80% training** and **20% testing** sets. |
-| ✅ Validation | Ensured dataset was clean, consistent, and ready for modeling. |
+Customer churn prediction is a high-impact AI use case across industries such as telecommunications, banking, SaaS, and e-commerce.
+This project builds a complete churn prediction pipeline:
 
----
+Data preprocessing & validation
 
-## 📊 2. Regression Analysis
+Supervised & unsupervised learning
 
-### 🎯 Objective
-To predict continuous target values based on multiple input features.
+Deep learning model comparison
 
-### ⚙️ Steps
-- Applied **Linear Regression** model.  
-- Evaluated using:  
-  - **Mean Absolute Error (MAE)**  
-  - **Mean Squared Error (MSE)**  
-  - **R² Score**  
-- Visualized **Actual vs Predicted** results using scatter plots for better interpretation.
+NLP preprocessing
 
-### 💡 Key Insights
-| Metric | Purpose |
-|---------|----------|
-| **MAE / MSE** | Measures prediction error magnitude. |
-| **R² Score** | Evaluates model performance. |
+Model explainability
 
-✅ Regression successfully captured relationships between independent and dependent variables.
+REST API deployment using Flask
 
----
+The goal is not just prediction — but interpretable, deployable, and responsible AI.
 
-## 🤖 3. Classification Analysis
+🧠 Data Science Workflow
+1️⃣ Data Preprocessing
 
-### 🎯 Objective
-To classify data into predefined categories using supervised learning.
+Missing values handled using median (numeric) and mode (categorical)
 
-### ⚙️ Models Used
-| Model | Description |
-|--------|--------------|
-| **Logistic Regression** | Baseline classifier for binary outcomes. |
-| **Random Forest Classifier** | Ensemble model for higher accuracy and robustness. |
+Categorical encoding using Label Encoding
 
-### 📈 Evaluation Metrics
-| Metric | Meaning |
-|---------|----------|
-| **Precision** | How many predicted positives were correct. |
-| **Recall** | How many actual positives were detected. |
-| **F1-Score** | Balances Precision and Recall. |
-| **Accuracy** | Overall model correctness. |
+Feature scaling using StandardScaler
 
-📊 Visualized results using bar charts and an **Accuracy Comparison Graph**.  
+Train-test split: 80 / 20
 
-🧠 **Reflection:**  
-> “The most important metric for this project is **F1-score**, as it balances both precision and recall — ensuring that neither false positives nor false negatives dominate model performance.”
+Data consistency and validation checks applied
 
----
+2️⃣ Regression Analysis
 
-## 🔍 4. Clustering Analysis
+Objective: Predict continuous outcomes
 
-### 🎯 Objective
-To identify hidden patterns and natural groupings using **Unsupervised Learning**.
+Model: Linear Regression
 
-### ⚙️ Steps
-- Implemented **K-Means Clustering** to form clusters.  
-- Applied **Elbow Method** to find the optimal cluster count.  
-- Used **PCA (Principal Component Analysis)** for dimensionality reduction (2D visualization).  
+Metrics:
 
-### 💡 Key Insights
-| Technique | Purpose |
-|------------|----------|
-| **K-Means** | Groups similar data points together. |
-| **PCA** | Reduces features for easy visualization. |
+MAE
 
-📉 Visualization revealed **well-defined clusters**, enhancing data interpretability.
+MSE
 
----
+R² Score
 
-## 📈 5. Visualization Highlights
+Visualization: Actual vs Predicted Scatter Plots
 
-| Type | Visualization Purpose |
-|------|------------------------|
-| 📊 **Scatter Plots** | Showed Regression Predictions (Actual vs Predicted). |
-| 📉 **Bar Charts** | Compared Classification metrics (Precision, Recall, F1, Accuracy). |
-| 🌀 **PCA 2D Plot** | Displayed distinct Clusters from K-Means. |
+3️⃣ Classification Analysis
 
-All visuals are designed for **clear, data-driven storytelling**.
+Objective: Predict churn (Yes / No)
 
----
+Models
 
-## 🧩 6. Project Milestones
+Logistic Regression
 
-| Milestone | Description | Status |
-|------------|--------------|---------|
-| 🧹 Data Cleaning | Completed preprocessing and validation | ✅ |
-| 📊 Regression | Implemented Linear Regression and performance evaluation | ✅ |
-| 🤖 Classification | Compared Logistic Regression and Random Forest | ✅ |
-| 📈 Evaluation Metrics | Visualized Precision, Recall, F1-Score, Accuracy | ✅ |
-| 🔍 Clustering | Applied K-Means and PCA visualization | ✅ |
-| 🧩 Final Integration | Combined all models into a unified pipeline | ✅ |
+Random Forest Classifier
 
----
+Evaluation Metrics
 
-## 🧠 Conclusion
-This project demonstrates practical understanding of **Data Science and AI workflows**, integrating both **Supervised (Regression, Classification)** and **Unsupervised (Clustering)** techniques.  
-It reflects a complete **end-to-end pipeline** — from data cleaning and model training to evaluation and visualization — highlighting the core skills needed in modern **data-driven applications**.
+Accuracy
 
----
+Precision
 
-## 📂 Repository Structure
+Recall
 
-📦 DS_AI_Project
-┣ 📁 data
-┣ 📁 code
-┣ 📁 visuals
-┣ 📁 reports
-┣ 📄 regression_analysis.ipynb
-┣ 📄 classification_analysis.ipynb
-┣ 📄 clustering_analysis.ipynb
-┣ 📄 README.md
+F1-Score
 
-yaml
-Copy code
+Key Decision:
+F1-Score prioritized to balance false positives and false negatives.
 
----
+4️⃣ Clustering Analysis
 
-### 👩‍💻 Author
-**Maliha Khokhar**  
-*AI & DS Assignment — Customer Churn Prediction Project*  
-*Semester: BS Software Engineering*
+Objective: Discover hidden customer segments
+
+Algorithm: K-Means
+
+Optimal clusters identified using Elbow Method
+
+Dimensionality reduction using PCA
+
+2D cluster visualization for interpretability
+
+🤖 Deep Learning Models
+🔹 ANN — Assignment 9
+
+Architecture
+
+Dense (16 neurons, ReLU)
+
+Dense (8 neurons, ReLU)
+
+Output (Sigmoid)
+
+Optimizer: Adam
+
+Loss: Binary Crossentropy
+
+Model Accuracy Comparison
+
+Model	Accuracy
+Logistic Regression	79%
+Decision Tree	82%
+Random Forest	85%
+SVM	83%
+ANN	87%
+
+✔ ANN selected as baseline deep learning model.
+
+🔹 CNN (Specialized Model) — Assignment 10
+
+Applied 1D-CNN to tabular churn data (experimental setup)
+
+Accuracy range: 84% – 89%
+
+Demonstrates feasibility of specialized AI models beyond traditional ML
+
+🧾 NLP Component — Assignment 11
+
+To demonstrate NLP preprocessing:
+
+Text normalization (lowercasing)
+
+Tokenization
+
+Stopword removal
+
+TF-IDF vectorization
+
+A dummy Customer_Feedback column was introduced to simulate real-world text data.
+
+🚀 Model Deployment (Flask API)
+
+The final churn model is deployed locally using Flask.
+
+🔌 API Endpoints
+
+Home
+
+GET /
+
+
+Response:
+
+Customer Churn Prediction API is running
+
+
+Predict Churn
+
+POST /predict
+
+
+Sample Input
+
+{
+  "tenure": 5,
+  "MonthlyCharges": 80,
+  "TotalCharges": 400
+}
+
+
+Sample Output
+
+{
+  "churn_prediction": 1
+}
+
+
+1 → Customer likely to churn
+
+0 → Customer likely to stay
+
+🔍 Model Explainability
+
+A Random Forest Classifier was used for deployment to enable feature importance analysis.
+
+Most influential features
+
+Tenure
+
+Monthly Charges
+
+Total Charges
+
+Insight Example
+
+Customers with shorter tenure and higher monthly charges show a higher probability of churn.
+
+This ensures transparency and supports ethical AI decision-making.
+
+⚖️ Ethical AI Practices
+
+Customer privacy preserved
+
+Sensitive attributes excluded
+
+Predictions used for decision support only
+
+Model behavior is explainable and auditable
+
+🏭 Industry Applications
+
+Telecommunications (customer retention)
+
+Banking & financial services
+
+SaaS & subscription platforms
+
+E-commerce businesses
+
+🛠️ Tech Stack
+
+Python
+
+Pandas, NumPy
+
+Scikit-learn
+
+TensorFlow / Keras
+
+Flask
+
+Matplotlib / Seaborn
+
+VS Code + Anaconda
+
+📁 Repository Structure
+DS_AI_Project/
+│
+├── data/
+├── notebooks/
+├── models/
+├── visuals/
+├── reports/
+│
+├── regression_analysis.ipynb
+├── classification_analysis.ipynb
+├── clustering_analysis.ipynb
+├── ann_churn.py
+├── train_model.py
+├── explain_model.py
+├── app.py
+│
+├── churn_model.pkl
+├── features.pkl
+└── README.md
+
+🔮 Future Improvements
+
+Web-based frontend (Streamlit / React)
+
+Real-time churn monitoring
+
+Advanced deep learning architectures
+
+CRM system integration
+
+👩‍💻 Author
+
+Maliha Khokhar
+BS Software Engineering
+AI & Data Science Coursework
