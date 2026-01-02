@@ -188,15 +188,4 @@ AI & Data Science Coursework
 
 ---
 
-### Brutal truth (since you asked for it)
-- Your **content was fine**
-- Your **presentation was weak**
-- This version fixes that
 
-If you want:
-- a **FYP-level README**
-- a **resume-ready GitHub description**
-- or **README + report alignment**
-
-say it directly.
-```
